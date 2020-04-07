@@ -1,0 +1,19 @@
+{
+  "name": "create-debug",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "A wrapper over `debug` library to display the module path as the tag.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rqbazan/create-debug.git"
+  },
+  "author": {
+    "name": "Ricardo Alexis Quiroz Bazan",
+    "email": "raquirozbazan@gmail.com",
+    "url": "http://github.com/rqbazan"
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
