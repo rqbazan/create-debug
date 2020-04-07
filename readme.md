@@ -14,7 +14,7 @@ yarn add create-debug
 
 ```js
 // src/debug.js
-import { _createDebug } from 'create-debug'
+import { createDebug as _createDebug } from 'create-debug'
 
 const configuration = {
   rootDir: 'dist',
@@ -37,7 +37,7 @@ const debug = createDebug(module)
 debug('hello world')
 ```
 
-3. You will see the log in the console:
+3. You will see the log in your terminal:
 
 ```sh
 myapp:some:path:foo hello world

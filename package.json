@@ -1,6 +1,6 @@
 {
   "name": "create-debug",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "description": "A wrapper over `debug` library to display the module path as the tag.",
   "license": "MIT",
