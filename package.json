@@ -1,6 +1,6 @@
 {
   "name": "create-debug",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "main": "index.js",
   "types": "index.d.ts",
   "description": "A wrapper over `debug` library to display the module path as the tag.",
