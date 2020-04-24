@@ -10,4 +10,14 @@ declare module 'create-debug' {
     module: NodeModule,
     config: Configuration
   ): Debugger
+
+  export function getTagName(
+    absolutePath: string,
+    config: Configuration
+  ): string
+
+  export function getFilePathParts(
+    absolutePath: string,
+    rootDir: string
+  ): string[]
 }
