@@ -1,5 +1,4 @@
 const path = require('path')
-const debug = require('debug')
 
 /**
  * @typedef Configuration
@@ -29,7 +28,7 @@ function getFilePathParts(absolutePath, rootDir) {
 /**
  * @param {string} absolutePath
  * @param {Configuration} config
- * @return {string}
+ * @returns {string}
  */
 function getTagName(absolutePath, config) {
   const parts = getFilePathParts(absolutePath, config.rootDir)
@@ -40,9 +39,10 @@ function getTagName(absolutePath, config) {
 /**
  * @param {NodeModule} module
  * @param {Configuration} config
+ * @returns {import('debug').Debugger}
  */
 function createDebug(module, config) {
-  return debug(getTagName(module.filename, config))
+  return require('debug')(getTagName(module.filename, config))
 }
 
 module.exports = {

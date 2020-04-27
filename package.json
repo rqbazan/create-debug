@@ -1,10 +1,13 @@
 {
   "name": "create-debug",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "main": "index.js",
   "types": "index.d.ts",
   "description": "A wrapper over `debug` library to display the module path as the tag.",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rqbazan/create-debug.git"
@@ -14,7 +17,14 @@
     "email": "raquirozbazan@gmail.com",
     "url": "http://github.com/rqbazan"
   },
-  "dependencies": {
+  "peerDependencies": {
     "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.4",
+    "debug": "^4.1.1",
+    "jest": "^25.4.0"
   }
 }
