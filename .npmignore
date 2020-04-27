@@ -1,0 +1,4 @@
+node_modules
+.github
+index.spec.js
+mock.js
